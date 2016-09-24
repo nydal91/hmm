@@ -3,9 +3,16 @@
 	          <md-sidenav #start>
 			
 
+  <md-nav-list>
 
 			    <a md-list-item routerLink="/videos">Videos</a>
-			       
+
+  <hr>
+
+  </md-nav-list>
+  <button md-button (click)="start.close()">CLOSE</button>
+
+  <div (swipe)="start.close()"></div>
 			   
 						                        </md-sidenav>
 

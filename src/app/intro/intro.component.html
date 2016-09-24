@@ -1,7 +1,7 @@
 
 
 
-<div >
+<div *ngFor="let item of items | async" >
 
 	       
 	   <div class="col-md-6 col-lg-6">
@@ -10,9 +10,10 @@
 		     <md-card>
 			                   
 			               
-			               <md-card-title align="center" >
+			               <md-card-title align="center">
 					                    
-					                         Card with title
+					       {{item.snippet.channelId}}
+
 								           
 								         
 								           </md-card-title>
@@ -20,8 +21,8 @@
 					               
 					           
 					               <md-card-content>
-							                                     <p>This is supporting text.</p>
-											                                         <p>lalalal </p>				                                         </md-card-content>
+							       <p>{{item.snippet.channelTitle}}</p>
+											                                 				                                         </md-card-content>
 																					               
 																					                                                                       </md-card>
 																													         
@@ -37,9 +38,9 @@
 
 		      <md-card>
 
-			                 <md-card-title align="center" >Farm</md-card-title>
+			      <md-card-title align="center" >{{item.snippet.description}}</md-card-title>
 
-					              <img md-card-image src="https://s3-eu-west-1.amazonaws.com/xsfarming/xsfarming/farm.jpg">
+			      <img md-card-image src="{{item.snippet.liveBroadcastContent}}">
 						                      
 						                          
 						                                              
@@ -53,4 +54,4 @@
 
 </div>
 
-
+  
