@@ -25,10 +25,10 @@ import { IntroComponent } from './intro/intro.component';
 // Must export the config
 
 export const firebaseConfig = {
-	  apiKey: "AIzaSyA9i3H3ILwMWux4Uec1eLmDBZ6q9XRtEPA",
-	      authDomain: "angel91-4f32f.firebaseapp.com",
-	          databaseURL: "https://angel91-4f32f.firebaseio.com",
-		      storageBucket: "angel91-4f32f.appspot.com"
+	  apiKey: "",
+	      authDomain: "",
+	          databaseURL: "",
+		      storageBucket: ""
 };
 
 
